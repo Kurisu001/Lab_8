@@ -5,6 +5,17 @@ using namespace std;
 
 //[Missing Code 1] Write definition of the function findGrade() here.
 
+char findGrade(double score){
+    char grade;
+	if(score > 90) grade ='A';
+	else if (score > 75) grade = 'B';
+	else if (score > 60) grade = 'C';
+	else if (score > 45) grade = 'D';
+	else grade = 'F';
+	return grade;
+}
+
+
 int main(){
 	//Input the number of students
 	int N,i = 0;
